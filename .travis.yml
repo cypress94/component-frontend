@@ -1,0 +1,14 @@
+sudo: required
+
+language: java
+
+services:
+  - docker
+
+install:
+  - docker run -d --name tomcat tomcat
+  - mvn compile
+  - docker build -t my_app_component_frontend src/main/docker
+
+script:
+  - docker run --link tomcat:tomcat my_app_component_frontend /bin/sh

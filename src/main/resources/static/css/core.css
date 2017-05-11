@@ -1,0 +1,52 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.social-links {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+}
+.social-links > li {
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+}
+/* цвет фона и рамки навигационного меню */
+.navbar-inverse {
+    background-color: #e67e22;
+    border-color: 	#e67e22;
+}
+
+/* цвет текста, содержащий название сайта или бренда */
+.navbar-inverse .navbar-brand {
+    color: #ffe6d1;
+}
+/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #d35400;
+    background-color: #d35400;
+}
+.btn-default{
+    background-color: #ffe6d1;
+    border-color: 	#e67e22;
+}
+.btn-default > .active > a,
+.btn-default > .active > a:hover,
+.btn-default > .active > a:focus
+{
+    background-color: #e67e22;
+    border-color: 	#d35400;
+}
+/*
+.navbar-brand>img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}*/
