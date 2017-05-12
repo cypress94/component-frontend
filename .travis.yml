@@ -8,7 +8,7 @@ services:
 install:
   - docker run -d --name tomcat tomcat
   - mvn package
-  - cp target/spring-boot-thymeleaf-1.0.jar src/main/docker
+  - cp target/spring-boot-thymeleaf-1.0.war src/main/docker
   - docker build -t my_app_component_frontend src/main/docker
 
 script:
