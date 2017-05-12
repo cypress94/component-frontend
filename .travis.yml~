@@ -7,8 +7,7 @@ services:
 
 install:
   - docker run -d --name tomcat tomcat
-  - mvn package
-  - cp target/component-aggregator-1.0.0-SNAPSHOT.jar src/main/docker
+  - mvn compile
   - docker build -t my_app_component_frontend src/main/docker
 
 script:
